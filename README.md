@@ -5,9 +5,9 @@ This project has allowed me to learn how to plan and execute a project end to en
 
 You can find all the code in the following modules and notebooks: 
 
-First Image DIC_SN_15_L10_Sum00.ipynb
-Second Image DIC_SN_15_L7_Sum00.ipynb
-Third Image DIC_SN_15_L38_Sum16.ipynb
+1. First Image DIC_SN_15_L10_Sum00.ipynb
+2. Second Image DIC_SN_15_L7_Sum00.ipynb
+3. Third Image DIC_SN_15_L38_Sum16.ipynb
 
 And the final paper at: Final_Project_Paper.pdf
 
