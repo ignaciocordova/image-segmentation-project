@@ -34,7 +34,21 @@ def luminance(rgb):
     return l_im 
 
 
+def channels(rgb):
+    """
+    Separates the channels of an RGB image.
 
+    Input: 3-channel RGB image
+    Output: 3 gray-scale images
+    """
+    r = rgb[:,:,0]
+    g = rgb[:,:,1]
+    b = rgb[:,:,2]
+
+    return r,g,b
+
+
+    
 def equalize(im,plot=False):
     
     """"
