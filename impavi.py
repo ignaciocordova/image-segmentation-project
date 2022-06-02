@@ -341,6 +341,22 @@ def color_reduction(im):
     return im6x6x6
 
 
+def reshape_channel(channel):
+  "Reshapes a 2D array into a column vector"
+  return channel.reshape(channel.shape[0]*channel.shape[1],1)
+
+
+def reshape_rgb(rgb):
+  "Reshapes an RGB image into a 4 column matrix"
+  #impavi function separates the 3 channels
+  r,g,b = impavi.channels(rgb)
+  #arange them into one big matrix of size 3*(n*m)
+  return np.concatenate([reshape_channel(r),
+                          reshape_channel(g),
+                          reshape_channel(b)], axis=1)
+
+
+
 def apply_kmeans(im,k,plot=False):
     """
     Applies k-means clustering to an image and automatically selects the largest cluster.
